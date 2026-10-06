@@ -1,8 +1,14 @@
-/* Infra Backlog LATAM — demo data layer. Fictional company "Contoso LATAM"; every person, ticket and number is invented. */
+/*!
+ * Infra Backlog · Self-updating ops dashboard
+ * Copyright (C) 2026 Ernesto Athaualpa Rojas (Neto). All rights reserved except as granted below.
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ * Commercial licence (no AGPL obligations, enterprise modules, support): see COMMERCIAL.md
+ */
+/* Infra Backlog LATAM — demo data layer. Fictional company "Contoso Global"; every person, ticket and number is invented. */
 const T = {
  "pt": {
   "title": "Backlog Mestre Infra LATAM",
-  "eyebrow": "Contoso LATAM · TI Infra LATAM (demo)",
+  "eyebrow": "Contoso Global · TI Infra LATAM (demo)",
   "sub": "Filtre por analista, país, projeto, tipo, fornecedor, prioridade ou impacto. Tudo com rastro de evidência.",
   "stamp": "demo pública · dados fictícios",
   "dim": {
@@ -77,7 +83,7 @@ const T = {
  },
  "es": {
   "title": "Backlog Maestro Infra LATAM",
-  "eyebrow": "Contoso LATAM · TI Infra LATAM (demo)",
+  "eyebrow": "Contoso Global · TI Infra LATAM (demo)",
   "sub": "Filtre por analista, país, proyecto, tipo, proveedor, prioridad o impacto. Todo con rastro de evidencia.",
   "stamp": "demo pública · datos ficticios",
   "dim": {
@@ -152,7 +158,7 @@ const T = {
  },
  "en": {
   "title": "Infra LATAM Master Backlog",
-  "eyebrow": "Contoso LATAM · IT Infra LATAM (demo)",
+  "eyebrow": "Contoso Global · IT Infra LATAM (demo)",
   "sub": "Filter by analyst, country, project, type, vendor, priority or impact. Every item carries its evidence.",
   "stamp": "public demo · fictional data",
   "dim": {

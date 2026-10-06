@@ -1,3 +1,9 @@
+/*!
+ * Infra Backlog · Self-updating ops dashboard
+ * Copyright (C) 2026 Ernesto Athaualpa Rojas (Neto). All rights reserved except as granted below.
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ * Commercial licence (no AGPL obligations, enterprise modules, support): see COMMERCIAL.md
+ */
 /* Project documentation — public demo version. */
 const DOCS_NAV = {
  "pt": {

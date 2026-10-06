@@ -1,14 +1,22 @@
-# Infra Backlog LATAM · self-updating ops dashboard
+# Infra Backlog · self-updating ops dashboard
 
 **One board that the team never types into.** A scheduled AI task reads e-mail, Teams, calendar, the Daily meeting notes and the ITSM queue (ServiceDesk Plus). It then republishes a prioritized backlog in which every claim is labelled **FACT / PROBABLE / HYPOTHESIS** with its source and time.
 
 > 🔗 **Live demo:** https://netorojas.github.io/infra-backlog-dashboard/
-> 🧪 All people, tickets and numbers are **fictional** (company "Contoso LATAM").
+> 🧪 All people, tickets and numbers are **fictional** (company "Contoso Global").
 
 ![Backlog demo](docs/media/backlog-demo.gif)
 
 ▶️ [Full 1-minute v2 walkthrough (MP4)](docs/media/backlog-demo.mp4)
 
+
+## ✨ v3 — new themes, AGPL open-core, localhost kit
+
+- **Two themes with character:** a bright *overworld* light theme (sky, coin gold, pipe green) and a deep *night-navy* dark theme with old-gold accents. Colour only — no symbols.
+- **36 integrations** in Settings, now including NetBox, Veeam, Commvault, Terraform Cloud, Ansible AWX, GitHub/Azure DevOps, HashiCorp Vault, Prometheus, Splunk and Okta.
+- **Runs anywhere:** `./serve.sh`, `.\serve.ps1` or `docker compose up -d` (see below).
+- **Licence:** AGPL-3.0-or-later community edition + commercial licence ([COMMERCIAL.md](COMMERCIAL.md)).
+- Works as one suite with [Orbinoc](https://github.com/netorojas/knoc-network-ops-console) (formerly KNOC).
 
 ## ✨ What's new in v2 — Contoso Ops Suite
 
@@ -84,21 +92,32 @@ flowchart LR
 | **Daily** | **Service Desk L1** |
 | ![Daily](docs/screenshots/daily-light.png) | ![Service desk](docs/screenshots/servicedesk-dark.png) |
 
-## Run it locally
+## Run it on your machine (localhost)
 
+**macOS / Linux**
 ```bash
 git clone https://github.com/netorojas/infra-backlog-dashboard.git
 cd infra-backlog-dashboard
-python3 -m http.server 8080   # then open http://localhost:8080
+./serve.sh                 # opens http://localhost:8080/?nologin
 ```
 
-The **Assistant** and **Share** features need the original hosting runtime. In this static demo, the assistant shows an "unavailable" notice and everything else works.
+**Windows (PowerShell)** — `.\serve.ps1`  ·  **Docker** — `docker compose up -d`
+
+**Whole suite** (Backlog + Orbinoc with the suite switcher): clone both repos into the same folder and run `python3 -m http.server 8080 --bind 127.0.0.1` from that folder.
+
+The **Assistant** and **Share** features need the original hosting runtime. In this static demo the assistant shows an "unavailable" notice and everything else works.
+
+> A hosted multi-tenant version is on the roadmap. The localhost mode will stay.
+
+## Licence
+
+Open-core: **[AGPL-3.0-or-later](LICENSE)** community edition + **[commercial licence](COMMERCIAL.md)**. Releases up to v2.x remain MIT. See [NOTICE](NOTICE) and [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Tech
 
-Vanilla JavaScript split into modules (`data.js`, `sdp.js`, `cap.js`, `met.js`, `docs.js`, `assist.js`), with charts in inline SVG and CSS. It has a guided tour, three languages and light and dark themes. SheetJS is loaded from cdnjs only for the XLSX export.
+Vanilla JavaScript split into modules (`data.js`, `sdp.js`, `cap.js`, `met.js`, `docs.js`, `assist.js`) plus the shared portal shell in `assets/`, with charts in inline SVG and CSS. It has a guided tour, three languages and light and dark themes. SheetJS is loaded from cdnjs only for the XLSX export.
 
 ---
 
-**Author:** Ernesto Rojas (Neto), Senior Infrastructure Engineer · ITSM · automation · LATAM operations
+**Author:** Ernesto Rojas (Neto), Infrastructure, Cloud & Security · ITSM · automation · [LinkedIn](https://www.linkedin.com/in/netorojas/)
 🇧🇷 *Painel de backlog que se atualiza sozinho, com dados fictícios.* · 🇪🇸 *Panel de backlog que se actualiza solo, con datos ficticios.*

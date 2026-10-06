@@ -1,3 +1,9 @@
+/*!
+ * Infra Backlog · Self-updating ops dashboard
+ * Copyright (C) 2026 Ernesto Athaualpa Rojas (Neto). All rights reserved except as granted below.
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ * Commercial licence (no AGPL obligations, enterprise modules, support): see COMMERCIAL.md
+ */
 /* ============================================================================
    Capacidade — aba de capacidade operacional do quadro Infra LATAM.
    Só números agregados do time (nenhum dado individual).

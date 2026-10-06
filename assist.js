@@ -1,3 +1,9 @@
+/*!
+ * Infra Backlog · Self-updating ops dashboard
+ * Copyright (C) 2026 Ernesto Athaualpa Rojas (Neto). All rights reserved except as granted below.
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ * Commercial licence (no AGPL obligations, enterprise modules, support): see COMMERCIAL.md
+ */
 /* ============================================================================
    Backlog Infra LATAM — Compartilhar (e-mail / Teams) + Assistente Claude
    - Compartilhar: só MONTA o link e o texto; quem envia é o Outlook/Teams do
@@ -15,7 +21,7 @@
   var CHAT_TEAM='19:demo-infra-team@thread.v2';                      /* Infra Team */
   var CHAT_DAILY='19:demo-daily@thread.v2'; /* Daily Infra */
   /* demo addresses (.example is a reserved domain) */
-  var MAIL={alex:'alex.moreno@contoso-latam.example',carla:'carla.mendes@contoso-latam.example',diego:'diego.vargas@contoso-latam.example',elena:'elena.ruiz@contoso-latam.example',fabio:'fabio.costa@contoso-latam.example',gabriel:'gabriel.soto@contoso-latam.example',helena:'helena.prado@contoso-latam.example',igor:'igor.neves@contoso-latam.example',julia:'julia.campos@contoso-latam.example',laura:'laura.gomez@contoso-latam.example'};
+  var MAIL={alex:'alex.moreno@contoso.example',carla:'carla.mendes@contoso.example',diego:'diego.vargas@contoso.example',elena:'elena.ruiz@contoso.example',fabio:'fabio.costa@contoso.example',gabriel:'gabriel.soto@contoso.example',helena:'helena.prado@contoso.example',igor:'igor.neves@contoso.example',julia:'julia.campos@contoso.example',laura:'laura.gomez@contoso.example'};
   var L=function(){return BL.L()};
   var norm=function(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')};
 
@@ -181,7 +187,7 @@
   }
   function rules(){
     var lang={pt:'português do Brasil',es:'español',en:'English'}[L()];
-    return 'Você é o assistente do painel "Backlog Infra LATAM" (Contoso LATAM / Contoso, time de Infraestrutura LATAM). '+
+    return 'Você é o assistente do painel "Backlog Infra LATAM" (Contoso Global / Contoso, time de Infraestrutura LATAM). '+
       'Responda em '+lang+', curto e direto: no máximo ~180 palavras, bullets quando ajudar, **negrito** só no essencial, números de chamado e frentes em `código`. '+
       'Use SOMENTE os dados abaixo. Marque [FATO] o que vem dos dados e [HIPÓTESE] o que for sugestão sua. Se a informação não está nos dados, diga isso e diga onde ela estaria (SDP, e-mail, Daily) — nunca invente chamado, número, data, pessoa ou valor. '+
       'Você não envia e-mail, não posta no Teams, não altera o SDP nem o painel. Se ferramentas estiverem disponíveis, pode usá-las para detalhar dados ou aplicar um filtro no quadro quando a pessoa pedir. '+

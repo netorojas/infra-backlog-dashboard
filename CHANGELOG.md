@@ -2,6 +2,14 @@
 
 All notable changes to Infra Backlog. Format: [Keep a Changelog](https://keepachangelog.com/), versions follow SemVer.
 
+## [3.0.0] - 2026-10-07
+### Added
+- Themes: light *overworld* and dark *night-navy*; hidden easter egg.
+- 10 more integrations (NetBox, Veeam, Commvault, Terraform Cloud, AWX, GitHub/Azure DevOps, Vault, Prometheus, Splunk, Okta).
+- Localhost kit: `serve.sh`, `serve.ps1`, Dockerfile and docker-compose.
+### Changed
+- Licence: AGPL-3.0-or-later (open-core) with a commercial licence available. v2.x and earlier remain MIT.
+
 ## [2.0.0] - 2026-10-06
 ### Added
 - Shared portal shell (`assets/portal.*`): demo sign-in (Entra ID, Google, GitHub, enterprise SSO), settings panel, 26 integration blueprints with field mapping and a simulated connection test, command palette, FAQ, changelog and a 60-second tour.

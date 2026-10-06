@@ -1,3 +1,9 @@
+/*!
+ * Infra Backlog · Self-updating ops dashboard
+ * Copyright (C) 2026 Ernesto Athaualpa Rojas (Neto). All rights reserved except as granted below.
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ * Commercial licence (no AGPL obligations, enterprise modules, support): see COMMERCIAL.md
+ */
 /* ============================================================================
    Método — como a Infra LATAM trabalha hoje × como deveria trabalhar.
    Diagnóstico com evidência, semana-padrão, simulador de foco, fluxo de
@@ -150,7 +156,7 @@ var STEPS=[
 var CHX=[
  {k:'std',ty:{pt:'Padrão',es:'Estándar',en:'Standard'},path:['rfc','cls','run','pir'],t:{pt:'Criar usuário de um novo colaborador',es:'Crear usuario de un nuevo ingreso',en:'Create a joiner’s user'},n:{pt:'Já testado, risco baixo e roteiro fixo: vai direto pelo catálogo, sem CAB.',es:'Ya probado, riesgo bajo y guion fijo: va directo por catálogo, sin CAB.',en:'Pre-tested, low risk, fixed runbook: straight through the catalog, no CAB.'}},
  {k:'nrm',ty:{pt:'Normal',es:'Normal',en:'Normal'},path:['rfc','cls','risk','cab','win','run','pir'],t:{pt:'Migrar FortiGate 60F para 121G em Montreal',es:'Migrar FortiGate 60F a 121G en Montreal',en:'Migrate FortiGate 60F to 121G in Montreal'},n:{pt:'Mexe na borda da rede de um país: passa por risco, rollback, CAB e janela.',es:'Toca el borde de red de un país: pasa por riesgo, rollback, CAB y ventana.',en:'Touches a country’s network edge: risk, rollback, CAB and window.'}},
- {k:'nrm2',ty:{pt:'Normal com prazo',es:'Normal con plazo',en:'Normal with deadline'},path:['rfc','cls','risk','cab','win','run','pir'],t:{pt:'Renovar o certificado do SBC',es:'Renovar el certificado *.contoso-latam.example',en:'Renew the *.contoso-latam.example certificate'},n:{pt:'Com 4 dias de prazo ainda cabe no CAB desta semana. Se esperar mais, vira emergencial — o método mostra o atraso antes.',es:'Con 4 días aún cabe en el CAB de esta semana. Si espera más, se vuelve emergencia.',en:'With 4 days left it still fits this week’s CAB. Wait longer and it becomes an emergency.'}},
+ {k:'nrm2',ty:{pt:'Normal com prazo',es:'Normal con plazo',en:'Normal with deadline'},path:['rfc','cls','risk','cab','win','run','pir'],t:{pt:'Renovar o certificado do SBC',es:'Renovar el certificado *.contoso.example',en:'Renew the *.contoso.example certificate'},n:{pt:'Com 4 dias de prazo ainda cabe no CAB desta semana. Se esperar mais, vira emergencial — o método mostra o atraso antes.',es:'Con 4 días aún cabe en el CAB de esta semana. Si espera más, se vuelve emergencia.',en:'With 4 days left it still fits this week’s CAB. Wait longer and it becomes an emergency.'}},
  {k:'emg',ty:{pt:'Emergencial',es:'Emergencia',en:'Emergency'},path:['rfc','cls','risk','ecab','run','pir'],t:{pt:'Regra de DID que faltava no SBC (caso Uruguai)',es:'Regla DID que faltaba en el SBC (caso Uruguay)',en:'Missing DID rule on the SBC (Uruguay case)'},n:{pt:'Serviço parado: aprova por chat com dois nomes, executa, e a revisão vai para o próximo CAB.',es:'Servicio caído: aprueba por chat con dos nombres, ejecuta, y la revisión va al próximo CAB.',en:'Service down: approve by chat with two names, implement, review at the next CAB.'}}];
 
 /* ---------- crise ---------- */
