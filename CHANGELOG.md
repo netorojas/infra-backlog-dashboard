@@ -2,6 +2,15 @@
 
 All notable changes to Infra Backlog. Format: [Keep a Changelog](https://keepachangelog.com/), versions follow SemVer.
 
+## [4.0.0] - 2026-10-07
+### Added
+- **Settings › Look and colours**: 7 palettes plus your own brand colours, shared with Orbiscale.
+- **Settings › Contact and support** with a pre-filled GitHub issue draft and private security advisory.
+- `SECURITY.md` and GitHub issue templates.
+### Changed
+- New default palette: light "Ember" (red-led) and dark "Grove" (forest and gold).
+- Orbinoc is now called Orbiscale across the suite.
+
 ## [3.0.0] - 2026-10-07
 ### Added
 - Themes: light *overworld* and dark *night-navy*; hidden easter egg.

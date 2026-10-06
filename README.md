@@ -10,13 +10,22 @@
 ▶️ [Full 1-minute v2 walkthrough (MP4)](docs/media/backlog-demo.mp4)
 
 
+## ✨ v4
+
+- **Look and colours**: 7 palettes or your own brand colours (shared with Orbiscale).
+- **Contact and support** inside the app, with a pre-filled GitHub issue draft and private security reports ([SECURITY.md](SECURITY.md)).
+
+| Board (light) | Board (dark) |
+|---|---|
+| ![Board, light](docs/screenshots/v4-board-light.png) | ![Board, dark](docs/screenshots/v4-board-dark.png) |
+
 ## ✨ v3 — new themes, AGPL open-core, localhost kit
 
 - **Two themes with character:** a bright *overworld* light theme (sky, coin gold, pipe green) and a deep *night-navy* dark theme with old-gold accents. Colour only — no symbols.
 - **36 integrations** in Settings, now including NetBox, Veeam, Commvault, Terraform Cloud, Ansible AWX, GitHub/Azure DevOps, HashiCorp Vault, Prometheus, Splunk and Okta.
 - **Runs anywhere:** `./serve.sh`, `.\serve.ps1` or `docker compose up -d` (see below).
 - **Licence:** AGPL-3.0-or-later community edition + commercial licence ([COMMERCIAL.md](COMMERCIAL.md)).
-- Works as one suite with [Orbinoc](https://github.com/netorojas/knoc-network-ops-console) (formerly KNOC).
+- Works as one suite with [Orbiscale](https://github.com/netorojas/knoc-network-ops-console) (formerly KNOC).
 
 ## ✨ What's new in v2 — Contoso Ops Suite
 
@@ -103,7 +112,7 @@ cd infra-backlog-dashboard
 
 **Windows (PowerShell)** — `.\serve.ps1`  ·  **Docker** — `docker compose up -d`
 
-**Whole suite** (Backlog + Orbinoc with the suite switcher): clone both repos into the same folder and run `python3 -m http.server 8080 --bind 127.0.0.1` from that folder.
+**Whole suite** (Backlog + Orbiscale with the suite switcher): clone both repos into the same folder and run `python3 -m http.server 8080 --bind 127.0.0.1` from that folder.
 
 The **Assistant** and **Share** features need the original hosting runtime. In this static demo the assistant shows an "unavailable" notice and everything else works.
 
