@@ -5,9 +5,35 @@
 > 🔗 **Live demo:** https://netorojas.github.io/infra-backlog-dashboard/
 > 🧪 All people, tickets and numbers are **fictional** (company "Contoso LATAM").
 
-![Board](docs/screenshots/board-light.png)
+![Backlog demo](docs/media/backlog-demo.gif)
+
+▶️ [Full 1-minute v2 walkthrough (MP4)](docs/media/backlog-demo.mp4)
+
+
+## ✨ What's new in v2 — Contoso Ops Suite
+
+Both tools now share one enterprise portal shell, with a different accent per product (teal → indigo).
+
+| | |
+|---|---|
+| **Responsive + mobile** | Drawer navigation, bottom sheets and touch targets. The board, filters and tabs reflow down to 360 px. |
+| **Sign-in (demo)** | Microsoft Entra ID, Google, GitHub and a dedicated **enterprise SSO** path (SAML 2.0 / OIDC, domain discovery). Simulated: no password field exists anywhere. |
+| **Settings** | General, **26 integration blueprints** (ServiceNow, Jira Service Management, ServiceDesk Plus, Zabbix, Datadog, Sentinel, Teams, Slack, PagerDuty, FortiGate API…), Auth & SSO (OIDC, SAML, SCIM, MFA, roles), notifications, data & privacy, API & webhooks |
+| **Secure by default** | Connectors are read-only unless a CAB-approved write is enabled; secrets are a Key Vault *reference*, never a value |
+| **Command palette** | ⌘K / Ctrl+K to jump to any page, integration or action |
+| **Quick tour, FAQ, changelog** | 60-second guided tour, searchable FAQ, and a changelog covering both products |
+| **Look & feel** | Light and dark themes, glass header, motion that respects *reduced motion* |
+
+> 💡 The 60-second tour replaces the old 15-step one. Open Settings → Integrations → Jira and press **Test connection**.
+
+| Sign-in | Integrations |
+|---|---|
+| ![Sign-in](docs/screenshots/v2-login.png) | ![Integrations](docs/screenshots/v2-integrations.png) |
+| ![SSO](docs/screenshots/v2-sso.png) | ![Mobile](docs/screenshots/v2-mobile.png) |
 
 ---
+
+![Board](docs/screenshots/board-light.png)
 
 ## The problem
 
