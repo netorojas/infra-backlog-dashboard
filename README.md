@@ -7,7 +7,7 @@
 
 ![Backlog demo](docs/media/backlog-demo.gif)
 
-▶️ [Full 1-minute v2 walkthrough (MP4)](docs/media/backlog-demo.mp4)
+▶️ [Full walkthrough (MP4, with sound)](docs/media/backlog-demo.mp4) · soundtrack is an original composition generated in code, free to reuse (CC0)
 
 
 ## ✨ v4
