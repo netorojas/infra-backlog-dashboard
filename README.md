@@ -10,6 +10,11 @@
 ▶️ [Full walkthrough (MP4, with sound)](docs/media/backlog-demo.mp4) · soundtrack is an original composition generated in code, free to reuse (CC0)
 
 
+## ✨ v5 · Linked to the map
+
+- Every card has **◎ Orbiscale**: it opens the Orbiscale *Demands* view on the site or resource the item affects. Orbiscale links back with `?q=<ID>`.
+- New corporate default palette (Executive) and a splash screen while loading.
+
 ## ✨ v4
 
 - **Look and colours**: 7 palettes or your own brand colours (shared with Orbiscale).

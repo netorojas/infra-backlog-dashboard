@@ -2,6 +2,13 @@
 
 All notable changes to Infra Backlog. Format: [Keep a Changelog](https://keepachangelog.com/), versions follow SemVer.
 
+## [5.0.0] - 2026-10-08
+### Added
+- Every item has an **◎ Orbiscale** link that opens where it lives on the Orbiscale map; `?q=<text>` pre-fills the search (used by Orbiscale to open an item here).
+- Splash screen while the board loads.
+### Changed
+- New default palette **Executive** (teal-led for the Backlog, blue for Orbiscale).
+
 ## [4.0.0] - 2026-10-07
 ### Added
 - **Settings › Look and colours**: 7 palettes plus your own brand colours, shared with Orbiscale.
