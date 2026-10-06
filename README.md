@@ -96,7 +96,7 @@ The **Assistant** and **Share** features need the original hosting runtime. In t
 
 ## Tech
 
-Vanilla JavaScript split into modules (`data.js`, `sdp.js`, `cap.js`, `met.js`, `docs.js`, `assist.js`, `tour.js`), with charts in inline SVG and CSS. It has a guided tour, three languages and light and dark themes. SheetJS is loaded from cdnjs only for the XLSX export.
+Vanilla JavaScript split into modules (`data.js`, `sdp.js`, `cap.js`, `met.js`, `docs.js`, `assist.js`), with charts in inline SVG and CSS. It has a guided tour, three languages and light and dark themes. SheetJS is loaded from cdnjs only for the XLSX export.
 
 ---
 
