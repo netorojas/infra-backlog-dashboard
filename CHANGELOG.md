@@ -2,6 +2,10 @@
 
 All notable changes to Infra Backlog. Format: [Keep a Changelog](https://keepachangelog.com/), versions follow SemVer.
 
+## [5.3.0] - 2026-10-08
+### Changed
+- **Moved:** Infra Backlog is now **Orbiscale Flow**, a module of Orbiscale (`knoc-network-ops-console/flow/`). This site forwards old links, keeping `?q=` searches.
+
 ## [5.0.0] - 2026-10-08
 ### Added
 - Every item has an **◎ Orbiscale** link that opens where it lives on the Orbiscale map; `?q=<text>` pre-fills the search (used by Orbiscale to open an item here).

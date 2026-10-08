@@ -1,5 +1,11 @@
 # Infra Backlog · self-updating ops dashboard
 
+> ## ➜ Infra Backlog is now **Orbiscale Flow**
+> The team board moved into Orbiscale as a module (same code, same demo data, plus shared profile, permissions and links to the map).
+> **Live:** https://netorojas.github.io/knoc-network-ops-console/flow/ · **Code:** [knoc-network-ops-console/flow](https://github.com/netorojas/knoc-network-ops-console/tree/main/flow)
+> Old links to this site forward automatically. This repository stays as the history of versions up to 5.2.
+
+
 **One board that the team never types into.** A scheduled AI task reads e-mail, Teams, calendar, the Daily meeting notes and the ITSM queue (ServiceDesk Plus). It then republishes a prioritized backlog in which every claim is labelled **FACT / PROBABLE / HYPOTHESIS** with its source and time.
 
 > 🔗 **Live demo:** https://netorojas.github.io/infra-backlog-dashboard/
